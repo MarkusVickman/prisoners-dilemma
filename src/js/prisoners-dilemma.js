@@ -36,6 +36,10 @@ let playerOneScore = 0;
 let playerTwoScore = 0;
 let bot;
 
+let rondTurn = document.getElementById("rond");
+
+let turnTotal;
+
 newBotGame.addEventListener("click", function (e) {
   bot = 1;
   botArray = ["friendly", "friendly", "aggressive", "friendly", "friendly"];
@@ -62,6 +66,8 @@ function startNewGame() {
   scoreP1.innerHTML = playerOneScore;
   scoreP2.innerHTML = playerTwoScore;
   whosTurn = 1;
+  turnTotal = 1;
+  rondTurn.innerHTML = ("Omgång " + turnTotal++);  
   startAnimation();
 }
 
@@ -216,6 +222,7 @@ function whoWon() {
   scoreP1.style.display = "block";
   scoreP2.style.display = "block";
 
+  rondTurn.innerHTML = ("Omgång " + turnTotal++);  
 }
 
 
