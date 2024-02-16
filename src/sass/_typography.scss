@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+h2{
+    margin-top: 30px;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h4 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+body {
+    background-color: lighten(#30325b, 10%);
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0 20px 0;
+    color: white;
+}
+
+#scorep1{
+    position: relative;
+    top:-130px;
+    left: -300px;
+    display: none;
+}
+
+#scorep2{
+    position: relative;
+    top:-190px;
+    left: 270px;
+    display: none;
+}
+
+#turnp1{
+    display: none;
+}
+
+#turnp2{
+    display: none;
+}
+
+#highscore{
+
+}
+

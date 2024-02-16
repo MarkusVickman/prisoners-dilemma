@@ -1,0 +1,90 @@
+
+#big-diamond {
+    width: 700px;
+    height: 700px;
+    background: red linear-gradient( rgb(37, 101, 123), rgb(157, 51, 51));
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    transform: translate(-50%);
+    margin-left: 50%;
+    position: relative;
+    margin-top: 80px;
+    max-width: 100%;
+  }
+
+@mixin small-diamond() {
+  clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+  width: 300px;
+  height: 300px;
+  //background: red linear-gradient(red, blue);
+  position: absolute;
+  max-width: 100%;
+}
+
+.small-diamond1 {
+  @include small-diamond();
+  top: 50px;
+  left: 200px;
+}
+
+.small-diamond2 {
+  @include small-diamond();
+  top: 200px;
+  left: 50px;
+}
+.small-diamond3 {
+  @include small-diamond();
+  top: 200px;
+  left: 350px;
+} 
+.small-diamond4 {
+  @include small-diamond();
+  top: 350px;
+  left: 200px;
+}
+
+@mixin triangle(){
+  clip-path: polygon(0% 50%, 50% 0%, 50% 100%);
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+  position: absolute;
+  font-size: 32px;
+  color: white;
+  
+}
+
+.numberfriendly {
+  position: absolute;
+  top: 130px;
+  left: 80px;
+}
+
+.numbernotfriendly {
+  @extend .numberfriendly;
+  rotate: 180deg;
+}
+
+#triangle1, #triangle3, #triangle5, #triangle7 {
+  @include triangle();
+  background: #30325b;
+}
+
+#triangle2, #triangle4, #triangle6, #triangle8 {
+  @include triangle();
+  background: rgb(143, 70, 143);
+  rotate: 180deg;
+}
+
+#triangle1:hover, #triangle3:hover, #triangle5:hover, #triangle7:hover {
+  background: lighten(#30325b, 30%);
+}
+
+#triangle2:hover, #triangle4:hover, #triangle6:hover, #triangle8:hover {
+  background: lighten(rgb(143, 70, 143), 25%);
+}
+
+p {
+  z-index: 3;
+}
+
+

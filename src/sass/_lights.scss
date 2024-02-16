@@ -1,0 +1,44 @@
+@mixin light(){
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 100px;
+    transform: translate(-50%);
+    margin-left: 50%;
+    z-index: 4;
+}
+
+#green-p1 {
+    @include light();
+    background-color: green;
+    margin-left: 30%;
+}
+
+#green-p2 {
+    @include light();
+    background-color: green;
+    margin-left: 70%;
+}
+
+#red-p1 {
+    @include light();
+    background-color: darkred;
+    margin-left: 20%;
+    margin-top: 200px;
+}
+
+#red-p2 {
+    @include light();
+    background-color: darkred;
+    margin-left: 80%;
+    margin-top: 200px;
+}
+
+#green-p1:hover, #green-p2:hover{
+    background-color: greenyellow;
+}
+
+#red-p1:hover, #red-p2:hover{
+    background-color: red;
+}

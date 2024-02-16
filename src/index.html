@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prisoner's dilemma</title>
+    <!--Länk till scss-fil-->
+    <link rel="stylesheet" href="sass/main.scss">
+    <!--Länk till javascript mobilmeny-->
+    <script type="module" src="js/prisoners-dilemma.js"></script>
+    <!--Favicon
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.ico?ver=2.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">-->
+    <!--Typsnitt inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header med logotyp och knapp för att öppna mobilmeny-->
+    <header>
+        <!--Logotypen ändras vid temabyte och laddas in i sass partial _theme
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+        <button id="btn-open">
+            <span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+        </button>-->
+    </header>
+    <!--Navigeringen ligger under headern för att dynamiskt fastna längst upp istället för header vid scrollande-
+    <nav id="main-nav">
+        <button id="btn-close">
+            <span class="menu-icon">
+                <span class="bars-cross1"></span>
+                <span class="bars-cross2"></span>
+            </span>
+            <span class="menu-text">
+                Stäng meny
+            </span>
+        </button>
+        <div class="center-menu">
+            <ul>
+                <li><a href="index.html" class="menu-link" id="menu-underline">Startsida</a></li>
+                <li><a href="sass.html" class="menu-link">SASS</a></li>
+                <li><a href="animation.html" class="menu-link">Animering</a></li>
+                <li><a href="diagram.html" class="menu-link">Diagram</a></li>
+                <li><a href="map.html" class="menu-link">Karta</a></li>
+            </ul>
+        </div>
+    </nav>-->
+    <main>
+        <!--Div men sidans huvud innehåll som centrerar-->
+        <div class="text">
+            <h1>Prisoner's dilemma</h1>
+            <button id="game">Nytt spel</button>
+            <button id="gamestop">Avsluta spel</button>
+            <h3 id="turnp1">Din tur spelare 1</h3>
+            <h3 id="turnp2">Din tur spelare 2</h3>
+            <button id="friendly">Vänlig</button>
+            <button id="aggressive">Aggressiv</button>
+
+        <div id="green-p1"></div>
+        <div id="red-p1"></div>
+        <div id="green-p2"></div>
+        <div id="red-p2"></div>
+        <div id=big-diamond>
+            <div class="small-diamond1">
+                <div id="triangle1">
+                    <p class="numberfriendly">3</p>
+                </div>
+                <div id="triangle2">
+                    <p class="numbernotfriendly">3</p>
+                </div>
+            </div>
+            <div class="small-diamond2">
+                <div id="triangle3">
+                    <p class="numberfriendly">5</p>
+                </div>
+                <div id="triangle4">
+                    <p class="numbernotfriendly">0</p>
+                </div>
+            </div>
+            <div class="small-diamond3">
+                <div id="triangle5">
+                    <p class="numberfriendly">0</p>
+                </div>
+                <div id="triangle6">
+                    <p class="numbernotfriendly">5</p>
+                </div>
+            </div>
+            <div class="small-diamond4">
+                <div id="triangle7">
+                    <p class="numberfriendly">1</p>
+                </div>
+                <div id="triangle8">
+                    <p class="numbernotfriendly">1</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 id="scorep1">Score player 1</h4>
+        <h2 id="scorep2">Score Player 2</h4>
+        <h2 id ="highscore"></h4>
+        <!--<ul id="highscore"></ul>-->
+
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

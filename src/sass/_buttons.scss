@@ -1,0 +1,32 @@
+button {
+    background-color: whitesmoke;
+    width: 100px;
+    height: 30px;
+    font-size: 16;
+    font-weight: 500;
+    border-radius: 10px;
+    border-style:solid;
+    box-shadow: 2px 2px 2px 2px rgb(248, 247, 247, 0.1);
+    margin-top: 20px;
+    color: black;
+    transform: translate(-50%);
+    margin-left: 50%;
+}
+
+button:hover {
+    box-shadow: 2px 2px 2px 2px rgb(248, 247, 247, 0.3);
+    background-color: white;
+}
+
+#friendly{
+    display: none;
+}
+
+#aggressive{
+        display: none;
+}
+
+#gamestop {
+    display: none;
+}
+
