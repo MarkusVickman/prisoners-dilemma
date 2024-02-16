@@ -92,9 +92,11 @@ friendlyBtn.addEventListener("click", function (e) {
     whosTurn = 2;
     turnP1.style.display = "none";
     turnP2.style.display = "block";
+    greenP1.style.backgroundColor = "greenyellow";
     triangle1.style.backgroundColor = "#7073B4";
     setTimeout(function () {
       triangle1.style.backgroundColor = "#30325b";
+      greenP1.style.backgroundColor = "green";
     }, 1000);
     if(bot === 1){
       botArray.shift(); 
@@ -107,9 +109,11 @@ friendlyBtn.addEventListener("click", function (e) {
     whosTurn = 1;
     turnP1.style.display = "block";
     turnP2.style.display = "none";
+    greenP2.style.backgroundColor = "greenyellow";
     triangle2.style.backgroundColor = "#C78DC7";
     setTimeout(function () {
       triangle2.style.backgroundColor = "#8F468F";
+      greenP1.style.backgroundColor = "green";
     }, 1000);
     whoWon();
   }
@@ -123,9 +127,11 @@ aggressiveBtn.addEventListener("click", function (e) {
     whosTurn = 2;
     turnP1.style.display = "none";
     turnP2.style.display = "block";
+    redP1.style.backgroundColor = "red";
     triangle3.style.backgroundColor = "#7073B4";
     triangle7.style.backgroundColor = "#7073B4";
     setTimeout(function () {
+      redP1.style.backgroundColor = "darkred";
       triangle3.style.backgroundColor = "#30325b";
       triangle7.style.backgroundColor = "#30325b";
     }, 1000);
@@ -140,9 +146,11 @@ aggressiveBtn.addEventListener("click", function (e) {
     whosTurn = 1;
     turnP1.style.display = "block";
     turnP2.style.display = "none";
+    redP2.style.backgroundColor = "red";
     triangle6.style.backgroundColor = "#C78DC7";
     triangle8.style.backgroundColor = "#C78DC7";
     setTimeout(function () {
+      redP2.style.backgroundColor = "darkred";
       triangle6.style.backgroundColor = "#8F468F";
       triangle8.style.backgroundColor = "#8F468F";
     }, 1000);
@@ -159,8 +167,10 @@ function botTurn() {
     whosTurn = 1;
     turnP1.style.display = "block";
     turnP2.style.display = "none";
+    greenP2.style.backgroundColor = "greenyellow";
     triangle2.style.backgroundColor = "#C78DC7";
     setTimeout(function () {
+      greenP2.style.backgroundColor = "green";
       triangle2.style.backgroundColor = "#8F468F";
     }, 1000);
     whoWon();
@@ -172,9 +182,11 @@ function botTurn() {
     whosTurn = 1;
     turnP1.style.display = "block";
     turnP2.style.display = "none";
+    redP2.style.backgroundColor = "red";
     triangle6.style.backgroundColor = "#C78DC7";
     triangle8.style.backgroundColor = "#C78DC7";
     setTimeout(function () {
+      redP2.style.backgroundColor = "darkred";
       triangle6.style.backgroundColor = "#8F468F";
       triangle8.style.backgroundColor = "#8F468F";
     }, 1000);
